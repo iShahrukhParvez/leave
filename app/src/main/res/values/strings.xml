@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">leave</string>
+    <string name="Clg_name1">St. Joseph\'s College of Engineering</string>
+    <string name="Clg_Slogan1">You Choose We Do It</string>
+    <string name="Clg_name2">St. Joseph\'s Institute of Technology</string>
+    <string name="Clg_Slogan2">We Make You Shine</string>
+    <string name="toplogin">WELCOME</string>
+    <string name="user">USERNAME  :</string>
+    <string name="enteruname">Enter Username</string>
+    <string name="pass">PASSWORD :</string>
+    <string name="enterpass">Enter Password</string>
+    <string name="loginbtn">LOGIN</string>
+</resources>

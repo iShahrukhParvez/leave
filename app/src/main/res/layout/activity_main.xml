@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F20261A1">
+
+    <!-- <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Clg_Slogan1"
+            android:textColor="@color/colorCollege1"
+            app:fontFamily="@font/architects_daughter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Clg_name1"
+            app:fontFamily="@font/futura"
+            android:textSize="20sp"
+            android:textColor="@color/colorCollege1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Clg_Slogan2"
+            android:gravity="center"
+            android:textColor="@color/colorCollege1"
+            app:fontFamily="@font/architects_daughter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Clg_name2"
+            android:textColor="@color/colorCollege1"
+            android:textSize="20sp"
+            app:fontFamily="@font/futura"
+            android:gravity="center"/>
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/toplogin"
+            android:textColor="@color/colorCollege1"
+            android:textSize="35sp"
+            app:fontFamily="@font/audiowide" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="@string/loginbtn"
+            android:src="@drawable/studentlogin" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="20dp"
+                android:text="USERNAME  :"
+                android:textColor="@color/colorCollege1"
+                android:textSize="20sp"
+                app:fontFamily="@font/futura" />
+
+            <EditText
+                android:id="@+id/uname"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:background="@drawable/container"
+                android:hint="@string/enteruname"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorCollege1"
+                android:textColorHint="@color/colorCollege1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/pass"
+                android:textColor="@color/colorCollege1"
+                android:textSize="20sp"
+                app:fontFamily="@font/futura" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:background="@drawable/container"
+                android:hint="@string/enterpass"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorCollege1"
+                android:textColorHint="@color/colorCollege1" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/loginbtn"
+            android:text="@string/loginbtn"
+            android:textColor="#F20261A1" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp">
+
+        <TextView
+            android:id="@+id/clgname"
+            android:layout_marginTop="450dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:fontFamily="@font/futura"
+            android:text="@string/Clg_name1"
+            android:textColor="@color/colorCollege1"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:contentDescription="@string/user"
+            android:id="@+id/logo"
+            android:layout_marginBottom="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/clglogo"
+            android:scaleType="center"
+            android:elevation="6dp"/>
+
+        <ImageView
+
+            android:id="@+id/bgimageView"
+            android:layout_width="600dp"
+            android:layout_height="1100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgapp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/user" />
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Clg_Slogan1"
+                android:textColor="@color/colorCollege1"
+                app:fontFamily="@font/architects_daughter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Clg_name1"
+                android:textColor="@color/colorCollege1"
+                android:textSize="25sp"
+                app:fontFamily="@font/futura" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Clg_Slogan2"
+                android:textColor="@color/colorCollege1"
+                app:fontFamily="@font/architects_daughter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Clg_name2"
+                android:textColor="@color/colorCollege1"
+                android:textSize="25sp"
+                app:fontFamily="@font/futura" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
